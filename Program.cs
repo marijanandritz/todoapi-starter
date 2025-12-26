@@ -16,7 +16,6 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 var scope = app.Services.CreateScope();
 var db = scope.ServiceProvider.GetService<TodoContext>();
-DbInitializer.Initialize(db);
 
 DbInitializer.Initialize(db);
 
